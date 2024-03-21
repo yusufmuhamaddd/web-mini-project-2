@@ -1,0 +1,348 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar-nav li {
+    margin: 0 10px;
+  }
+  
+  .navbar-nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-nav a:hover {
+    color: #66ccff;
+  }
+  
+  .hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #66ccff;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .hero-button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  
+  .section {
+    padding: 40px 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .section-subtitle {
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .about-image {
+    width: 40%;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-content {
+    width: 50%;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .certificates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .certificate {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .certificate-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .certificate-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  
+  .educations {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .education {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .education-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #66ccff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    margin-right: 20px;
+  }
+  
+  .education-content {
+    width: 100%;
+  }
+  
+  .education-title {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .education-subtitle {
+    font-size: 18px;
+    color: #66ccff;
+    margin-bottom: 10px;
+  }
+  
+  .education-duration {
+    font-size: 18px;
+    color: #b8b8b8;
+  }
+  
+  #contact {
+    background-color: #000;
+    color: white;
+    padding: 60px 0;
+    border-radius: 8px;
+    border-top: 5px solid #66ccff;
+  }
+  
+  #contact .section-title {
+    color: #66ccff;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  #contact-form {
+    max-width: 700px;
+    margin: auto;
+    background-color: #222;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  #contact-form .form-control {
+    background-color: #333;
+    border: 1px solid #444;
+    color: white;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  #contact-form .form-group {
+    margin-bottom: 15px;
+  }
+
+  #contact-form .form-control:focus {
+    border-color: #66ccff;
+    box-shadow: 0 0 0 0.2rem rgba(102, 204, 255, 0.25);
+  }
+  
+  #contact-form .form-control::placeholder {
+    color: #bbb;
+  }
+  
+  #contact-form .form-label {
+    color: #66ccff;
+    margin-bottom: 10px;
+  }
+  
+  #contact-form button[type="submit"] {
+    background-color: #66ccff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+  }
+  
+  #contact-form button[type="submit"]:hover {
+    background-color: #5599ff;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+
+  
+    #contact-form {
+      width: 90%;
+      padding: 30px;
+    }
+  }
+
+  .footer {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer p {
+    font-size: 20px;
+  }
+  
+  .footer a {
+    color: #66ccff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: white;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-nav {
+      display: none;
+    }
+  
+    .about {
+      flex-direction: column;
+    }
+  
+    .about-image {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .about-content {
+      width: 100%;
+    }
+  
+    .certificates {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .education {
+      flex-direction: column;
+    }
+  
+    .education-icon {
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+      margin: 0 auto 20px;
+    }
+  
+    .education-content {
+      text-align: center;
+    }
+  }
